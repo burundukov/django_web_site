@@ -5,3 +5,15 @@ body {
 .alert-light {
 	border-color: #bfbfbf
 }
+
+.form-section {
+	padding: 20px;
+	border: 1px solid silver;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.form-section > h2 {
+	color: #b38a22;
+	margin-bottom: 10px;
+}

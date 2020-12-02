@@ -1,0 +1,17 @@
+{% extends 'top/main.html' %}
+{% load crispy_forms_tags %}
+{% block main_section %}
+
+<div class="form-section">
+	<h2>Регистрация на сайте</h2>
+	<form method="post">
+		{% csrf_token %}
+		{{ form|crispy }}
+	<button type="submit" class="btn btn-warning">Зарегестрироваться</button>
+	</form>
+</div>
+	
+<hr>
+Уже зарегестрированы? <a href="{% url 'auth' %}">Войти в личный кабинет</a>
+
+{% endblock main_section %}
